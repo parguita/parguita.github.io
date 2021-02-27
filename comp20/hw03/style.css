@@ -1,0 +1,26 @@
+SetList {
+  display: block;
+  width: 100;
+}
+Song {
+  font-family: sans-serif;
+  background: white; color: black;
+  padding: 6px;
+  margin: 6px;
+  width: calc(50% - 24px);
+  display:block;
+  float:left;
+  border-bottom: #4378E8 2px solid;
+}
+Song *{
+  margin-bottom:12px;
+  color: #0F0F0F;
+  display:block;
+}
+artist {
+  font-size: 24px;
+  color: #3A228F;
+}
+title::before { content:"Title: "}
+genre::before { content:"Genre: " }
+year::before { content: "Year: " }
