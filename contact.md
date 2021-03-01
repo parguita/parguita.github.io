@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Victor Parga Profile
+title: Contact
 ---
 
 A [Bootstrap 4](https://getbootstrap.com/) start up project for [Github Pages](https://pages.github.com/) and [Jekyll](https://jekyllrb.com/).
