@@ -1,4 +1,4 @@
 ---
 layout: page
-title: Victor Parga's Profile
+title: Welcome to my Personal Site
 ---
