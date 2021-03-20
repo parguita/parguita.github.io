@@ -29,12 +29,13 @@
          $.each(val, function(id, content){
             $(".playList > #" + key).append("<div class="+id+">"+content+"</div>");
             if(id == "genre"){
+              console.log(content);
               filters.push(content);
             }
          });
         });
-        $.each(filters, function(item){
-          console.log(item);
+        $.each(filters, function(item, data){
+          console.log(item, data);
           $("#genres").append("<option value="+item+">"+item+"</option>");
         });
       });
