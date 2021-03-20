@@ -26,7 +26,7 @@ body {
 }
 
 #filter > div {
-
+  width:calc(50% - 10px);
 }
 
 
