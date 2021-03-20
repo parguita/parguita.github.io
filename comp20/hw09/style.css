@@ -23,6 +23,7 @@ body {
   bottom:0px;
   display:flex;
   background-color: white;
+  border-top: 2px solid;
 }
 
 #filter > div {
@@ -32,6 +33,6 @@ body {
 
 @media screen and (max-width: 600px) {
   .playList > div {
-    width: 100%;
+    width: calc(100% - 10px);
   }
 }
