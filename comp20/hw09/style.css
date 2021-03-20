@@ -1,0 +1,9 @@
+body {
+  width: 100%;
+}
+.playList {
+  width: 90%
+}
+.playList div {
+  width: 50% - 10px;
+}
