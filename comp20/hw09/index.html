@@ -11,16 +11,30 @@
   </head>
   <body>
     <div class="playList"></div>
+    <div id="filter">
+      <div><p>Filter:</p></div>
+      <div>
+        <select name="" id="genres">
+        </select>
+      </div>
+    </div>
   </body>
   <script type="text/javascript">
     $.getJSON( "file.json", function(data) {
       var playList = [];
+      var filters = [];
       $.each( data, function( key, val ) {
          playList.push(key);
-         $(".playList").append("<div id="+key+"></div>")
+         $(".playList").append("<div id="+key+"></div>");
          $.each(val, function(id, content){
-            $(".playList > #" + key).append("<div class="+id+">"+content+"</div>");
+            $(".playList > #" + key).append("<div class="+id+"><p>"+content+"</p></div>");
+            if("id" == "genre"){
+              filter.push(content);
+            }
          });
+        });
+        $.each(filter, function(item){
+          $("#genres").append("<option value="+item+">"+item+"</option>");
         });
       });
   </script>
