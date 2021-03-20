@@ -37,9 +37,9 @@
           $("#genres").append("<option value="+data.replaceAll(/\s/g,'')+">"+data+"</option>");
         });
       });
-      $("selector").change(
-        function(e){
-          alert(e);
+      $("select").change(
+        function(){
+          console.log($( "select option:selected" ).value());
         }
       );
   </script>
