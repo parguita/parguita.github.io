@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8"/>
     <title> Homework 9 - Victor Parga </title>
+    <link href="style.css" type="text/css">
     <script src="jquery.js" type="text/javascript"></script>
   </head>
   <body>
@@ -15,8 +16,6 @@
          playList.push(key);
          $(".playList").append("<div id="+key+"></div>")
          $.each(val, function(id, content){
-            console.log(key);
-            console.log(id, content);
             $(".playList > #" + key).append("<div class="+id+">"+content+"</div>");
          });
         });
