@@ -28,7 +28,7 @@
          $(".playList").append("<div id="+key+"></div>");
          $.each(val, function(id, content){
             $(".playList > #" + key).append("<div class="+id+">"+content+"</div>");
-            if("id" == "genre"){
+            if(id == "genre"){
               filters.push(content);
             }
          });
