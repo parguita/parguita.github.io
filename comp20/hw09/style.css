@@ -16,14 +16,22 @@ body {
   font-weight:700;
 }
 
+#filter {
+  width:calc(100% - 10px);
+  position: fixed;
+  padding: 5px;
+  bottom:0px;
+  display:flex;
+  background-color: white;
+}
+
+#filter > div {
+
+}
+
+
 @media screen and (max-width: 600px) {
   .playList > div {
     width: 100%;
   }
-}
-
-#filter {
-  width:100%;
-  position: fixed;
-  bottom:0px;
 }
