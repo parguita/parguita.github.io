@@ -21,6 +21,7 @@ body {
   position: fixed;
   padding: 5px;
   bottom:0px;
+  right:0px;
   display:flex;
   background-color: white;
   border-top: 2px solid;
@@ -28,6 +29,7 @@ body {
 
 #filter > div {
   width:calc(50% - 10px);
+  font-size: 24px;
 }
 
 
