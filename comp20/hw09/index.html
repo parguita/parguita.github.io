@@ -30,7 +30,7 @@
             $(".playList > #" + key).append("<div class="+id+">"+content+"</div>");
             if(id == "genre"){
               console.log(content);
-              filters.push(content.replace(/\s/g,''));
+              filters.push(content.replaceAll(/\s/g,''));
             }
          });
         });
