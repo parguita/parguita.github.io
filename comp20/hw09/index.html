@@ -12,9 +12,13 @@
     $.getJSON( "file.json", function(data) {
       var playList = [];
       $.each( data, function( key, val ) {
-         console.log(key, val);
          playList.push(key);
-         
+         $(".playList").append("<div id="+key+"></div>")
+         $.each(val, function(id, content){
+            console.log(key);
+            console.log(id, content);
+            $(".playList > #" + key).append("<div class="+id+">"+content+"</div>");
+         });
         });
       });
   </script>
