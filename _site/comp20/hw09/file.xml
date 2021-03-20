@@ -1,0 +1,63 @@
+<?xml-stylesheet href="style.css"?>
+<SetList>
+    <Song id="s001">
+        <artist>Katy Perry</artist>
+        <title>Teenage Dream</title>
+        <genre>Pop</genre>
+        <year>2010</year>
+    </Song>
+    <Song id="s002">
+        <artist>Ricky Martin</artist>
+        <title>Livin' la Vida Loca</title>
+        <genre>Latin pop</genre>
+        <year>1999</year>
+    </Song>
+    <Song id="s003">
+        <artist>Los Cantantes</artist>
+        <title>El Venao</title>
+        <genre>Merengue</genre>
+        <year>1996</year>
+    </Song>
+    <Song id="s004">
+        <artist>Caballo dorado</artist>
+        <title>No rompas mi corazon</title>
+        <genre>Country</genre>
+        <year>1997</year>
+    </Song>
+    <Song id="s005">
+        <artist>The Soca Boys</artist>
+        <title>Follow the Leader</title>
+        <genre>Dance</genre>
+        <year>1998</year>
+    </Song>
+    <Song id="s006">
+        <artist>Azul Azul</artist>
+        <title>La Bomba</title>
+        <genre>Latin</genre>
+        <year>2000</year>
+    </Song>
+    <Song id="s007">
+        <artist>Garibaldi</artist>
+        <title>La ventanita</title>
+        <genre>Latin</genre>
+        <year>1994</year>
+    </Song>
+    <Song id="s008">
+        <artist>Timbiriche</artist>
+        <title>Tu y Yo Somos Uno Mismo</title>
+        <genre>Latin</genre>
+        <year>1982</year>
+    </Song>
+    <Song id="s009">
+        <artist>Luis Miguel</artist>
+        <title>Ahora te puedes marchar</title>
+        <genre>Latin Pop</genre>
+        <year>1987</year>
+    </Song>
+    <Song id="s010">
+        <artist>Rostros Ocultos</artist>
+        <title>El Final</title>
+        <genre>Rock</genre>
+        <year>2009</year>
+    </Song>
+</SetList>

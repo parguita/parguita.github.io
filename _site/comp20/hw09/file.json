@@ -1,0 +1,63 @@
+{"playlist": {
+     "01" : {
+        "artist":"Katy Perry",
+        "title":"Teenage Dream",
+        "genre":"Pop",
+        "year":"2010"
+    },
+    "02" : {
+        "artist":"Ricky Martin",
+        "title":"Livin' la Vida Loca",
+        "genre":"Latin pop",
+        "year":"1999"
+    },
+    "03" : {
+        "artist":"Los Cantantes",
+        "title":"El Venao",
+        "genre":"Merengue",
+        "year":"1996"
+    },
+    "04" : {
+        "artist":"Caballo dorado",
+        "title":"No rompas mi corazon",
+        "genre":"Country",
+        "year":"1997"
+    },
+    "05" : {
+        "artist":"The Soca Boys",
+        "title":"Follow the Leader",
+        "genre":"Dance",
+        "year":"1998"
+    },
+    "06" : {
+        "artist":"Azul Azul",
+        "title":"La Bomba",
+        "genre":"Latin",
+        "year":"2000"
+    },
+    "07" : {
+        "artist":"Garibaldi",
+        "title":"La ventanita",
+        "genre":"Latin",
+        "year":"1994"
+    },
+    "08" : {
+        "artist":"Timbiriche",
+        "title":"Tu y Yo Somos Uno Mismo",
+        "genre":"Latin",
+        "year":"1982"
+    },
+    "09" : {
+        "artist":"Luis Miguel",
+        "title":"Ahora te puedes marchar",
+        "genre":"Latin Pop",
+        "year":"1987"
+    },
+    "10" : {
+        "artist":"Rostros Ocultos",
+        "title":"El Final",
+        "genre":"Rock",
+        "year":"2009"
+    }
+  }
+}
