@@ -30,13 +30,13 @@
             $(".playList > #" + key).append("<div class="+id+">"+content+"</div>");
             if(id == "genre"){
               console.log(content);
-              filters.push(content);
+              filters.push(content.replace(/\s/g,''));
             }
          });
         });
         $.each(filters, function(item, data){
           console.log(item, data);
-          $("#genres").append("<option value="+item+">"+item+"</option>");
+          $("#genres").append("<option value="+data+">"+data+"</option>");
         });
       });
   </script>
