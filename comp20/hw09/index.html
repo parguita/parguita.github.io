@@ -27,12 +27,12 @@
          playList.push(key);
          $(".playList").append("<div id="+key+"></div>");
          $.each(val, function(id, content){
-            var className = id;
+
             if(id == "genre" && !filters.includes(content)){
               filters.push(content);
-              className += " " + content;
             }
-            $(".playList > #" + key).append("<div class="+className+">"+content+"</div>");
+            $(".playList > #" + key).append("<div class="+id+">"+content+"</div>");
+            $(".playList > #" + key).addClass(content.replaceAll(/\s/g,''));
          });
         });
         $.each(filters, function(item, data){
@@ -41,12 +41,17 @@
       });
       $("select").change(
         function(){
-          hideClass = $( "select option:selected" ).val();
+          doShow = $( "select option:selected" ).val();
           console.log($( "select option:selected" ).val());
           $.each($(".noShow"),function(){
             $(".noShow").toggleClass("noShow");
           });
-          $("."+hideClass).addClass("noShow");
+          $.each($(".playList > div"), function(){
+            if($(this).hasClass(doShow)){
+              continue;
+            }
+            $(this).addClass("noShow");
+          });
         }
       );
   </script>
