@@ -41,7 +41,7 @@
         function(){
           hideClass = $( "select option:selected" ).val();
           console.log($( "select option:selected" ).val());
-          $(".noShow").each(val, function(){
+          $.each($(".noShow"),(function(){
             $(".noShow").toggleClass("noShow");
           });
           $("."+hideClass).addClass("noShow");
