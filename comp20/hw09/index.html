@@ -43,15 +43,16 @@
       $("select").change(
         function(){
           doShow = $( "select option:selected" ).val();
-          console.log($( "select option:selected" ).val());
           $.each($(".noShow"),function(){
             $(".noShow").toggleClass("noShow");
           });
-          $.each($(".playList > div"), function(){
-            if(!$(this).hasClass(doShow) && $(this).val() != "all"){
-              $(this).addClass("noShow");
-            }
-          });
+          if(doShow != "all"){
+            $.each($(".playList > div"), function(){
+              if(!$(this).hasClass(doShow) && ){
+                $(this).addClass("noShow");
+              }
+            });
+          }
         }
       );
   </script>
