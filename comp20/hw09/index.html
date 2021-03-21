@@ -15,6 +15,7 @@
       <div>Filter:</div>
       <div>
         <select name="" id="genres">
+          <option value="all">All</option>
         </select>
       </div>
     </div>
@@ -47,7 +48,7 @@
             $(".noShow").toggleClass("noShow");
           });
           $.each($(".playList > div"), function(){
-            if(!$(this).hasClass(doShow)){
+            if(!$(this).hasClass(doShow) && $(this).val() != "all"){
               $(this).addClass("noShow");
             }
           });
