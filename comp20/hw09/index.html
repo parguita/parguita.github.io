@@ -47,10 +47,9 @@
             $(".noShow").toggleClass("noShow");
           });
           $.each($(".playList > div"), function(){
-            if($(this).hasClass(doShow)){
-              continue;
+            if(!$(this).hasClass(doShow)){
+              $(this).addClass("noShow");
             }
-            $(this).addClass("noShow");
           });
         }
       );
