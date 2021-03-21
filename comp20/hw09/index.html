@@ -27,7 +27,7 @@
          playList.push(key);
          $(".playList").append("<div id="+key+"></div>");
          $.each(val, function(id, content){
-            $(".playList > #" + key).append("<div class="+id+">"+content+"</div>");
+            $(".playList > #" + key).append("<div class="+id+" "+content.replaceAll(/\s/g,'')+">"+content+"</div>");
             if(id == "genre" && !filters.includes(content)){
               filters.push(content);
             }
@@ -39,7 +39,9 @@
       });
       $("select").change(
         function(){
-          console.log($( "select option:selected" ).value());
+          hideClass = $( "select option:selected" ).val();
+          console.log($( "select option:selected" ).val());
+          $.("."+hideClass).hidden();
         }
       );
   </script>
