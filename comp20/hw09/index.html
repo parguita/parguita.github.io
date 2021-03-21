@@ -27,10 +27,12 @@
          playList.push(key);
          $(".playList").append("<div id="+key+"></div>");
          $.each(val, function(id, content){
-            $(".playList > #" + key).append("<div class="+id+" "+content.replaceAll(/\s/g,'')+">"+content+"</div>");
+            var className = id;
             if(id == "genre" && !filters.includes(content)){
               filters.push(content);
+              className += " " + content;
             }
+            $(".playList > #" + key).append("<div class="+className+">"+content+"</div>");
          });
         });
         $.each(filters, function(item, data){
