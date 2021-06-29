@@ -4,10 +4,10 @@
         <p>
             This is the original one
         </p>
-        <input type="button" onclick="()=>setCookie">
+        <input type="button" onclick="setCookie(1)">
     </body>
     <script>
-        function setCookie(cname, cvalue, exdays) {
+        function setCookie(exdays) {
             const d = new Date();
             d.setTime(d.getTime() + (exdays*24*60*60*1000));
             let expires = "expires="+ d.toUTCString();
