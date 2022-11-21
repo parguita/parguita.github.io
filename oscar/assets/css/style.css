@@ -177,6 +177,10 @@ h1, h2, h3, h4, h5, h6 {
   color: #149ddd;
 }
 
+.contact-list {
+  list-style-type: none;
+}
+
 /* Mobile Navigation */
 .mobile-nav-toggle {
   position: fixed;
@@ -406,7 +410,7 @@ section {
 }
 
 /*--------------------------------------------------------------
-# Akills
+# Skills
 --------------------------------------------------------------*/
 .skills .progress {
   height: 60px;
