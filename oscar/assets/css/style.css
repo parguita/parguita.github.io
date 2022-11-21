@@ -128,6 +128,7 @@ h1, h2, h3, h4, h5, h6 {
   #header {
     left: -300px;
   }
+
   #main {
     margin-left: 0;
   }
@@ -233,9 +234,16 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #hero .hero-container {
-  position: relative;
+  position: absolute;
   z-index: 2;
   min-width: 300px;
+  bottom: 0;
+  left: 350px;
+  transition: all 0.5s;
+}
+
+#hero.nav-active .hero-container {
+  left:350px;
 }
 
 #hero h1 {
@@ -266,6 +274,12 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
+@media (max-width: 1199px) {
+  #hero .hero-container {
+    left:50px;
+  }
+}
+
 @media (max-width: 768px) {
   #hero h1 {
     font-size: 28px;
@@ -280,6 +294,13 @@ h1, h2, h3, h4, h5, h6 {
     background-image: url("../img/oscar_horizontal.jpg");
     background-position: center right;
     background-size: cover;
+  }
+
+  #hero .hero-container {
+    left:10px;
+  }
+  #hero.nav-active .hero-container {
+    left:10px;
   }
 }
 
@@ -458,7 +479,7 @@ section {
 }
 
 .resume .resume-item {
-  padding: 0 0 20px 20px;
+  padding: 20px 0 0 20px;
   margin-top: -2px;
   border-left: 2px solid #1f5297;
   position: relative;
