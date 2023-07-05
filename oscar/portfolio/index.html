@@ -1290,6 +1290,30 @@
   <!-- Template Main JS File -->
   <script src="../assets/js/main.js"></script>
 
+  <script>
+    function getCookie(cname) {
+      let name = cname + "=";
+      let ca = document.cookie.split(';');
+      for(let i = 0; i < ca.length; i++) {
+        let c = ca[i];
+        while (c.charAt(0) == ' ') {
+          c = c.substring(1);
+        }
+        if (c.indexOf(name) == 0) {
+          return c.substring(name.length, c.length);
+        }
+      }
+      return "";
+    }
+
+    
+    let password = getCookie("password");
+    console.log(password);
+
+    if(password !== "b3NjYXJQb3J0Zm9saW8yMDIz"){
+      window.location.href = "../index.html";
+    }
+  </script>
 </body>
 
 </html>

@@ -572,12 +572,13 @@
     const portfolioForm = document.getElementById("portfolioForm");
     const code = "b3NjYXJQb3J0Zm9saW8yMDIz";
     const error = document.getElementById("error");
-    console.log(portfolioForm);
+    
     function validateForm() {
       error.classList.add("d-none");
       event.preventDefault();
       const submittedText = document.getElementsByName("password")[0].value;
       if(submittedText === code) {
+        document.cookie = "password=b3NjYXJQb3J0Zm9saW8yMDIz;"
         window.location.href = "./portfolio/index.html";
       }
       error.classList.remove("d-none");
