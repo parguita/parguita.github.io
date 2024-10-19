@@ -266,11 +266,13 @@ ul.contact-list{
   border-bottom: 3px solid #149ddd;
 }
 
-#hero .quote {
+.quote {
   font-family: "Bitter", serif;
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
+  font-size: 24px;
+  color: #149ddd;
 }
 
 @media (min-width: 1024px) {
