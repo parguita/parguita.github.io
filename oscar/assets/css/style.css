@@ -80,12 +80,12 @@ h1, h2, h3, h4, h5, h6 {
 #header .profile img {
   margin: 15px auto;
   display: block;
-  width: 120px;
+  width: 200px;
   border: 8px solid #2c2f3f;
 }
 
 #header .profile h1 {
-  font-size: 24px;
+  font-size: 32px;
   margin: 0;
   padding: 0;
   font-weight: 600;
@@ -100,7 +100,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #header .profile .social-links a {
-  font-size: 18px;
+  font-size: 32px;
   display: inline-block;
   background: #212431;
   color: #fff;
@@ -109,8 +109,8 @@ h1, h2, h3, h4, h5, h6 {
   margin-right: 4px;
   border-radius: 50%;
   text-align: center;
-  width: 36px;
-  height: 36px;
+  width: 48px;
+  height: 48px;
   transition: 0.3s;
 }
 
@@ -131,6 +131,14 @@ h1, h2, h3, h4, h5, h6 {
 
   #main {
     margin-left: 0;
+  }
+
+    
+  #header .profile img{
+    display: none;
+  }
+  #header .profile h1 {
+    margin-top: 2rem;
   }
 }
 
@@ -201,12 +209,13 @@ ul.contact-list{
   color: #fff;
   width: 40px;
   height: 40px;
-  display: inline-flex;
+  display: none;
   align-items: center;
   justify-content: center;
   line-height: 0;
   border-radius: 50px;
   cursor: pointer;
+
 }
 
 .mobile-nav-active {
@@ -217,6 +226,12 @@ ul.contact-list{
   left: 0;
 }
 
+@media (max-width: 768px) {
+  .mobile-nav-toggle {
+    display: inline-flex;
+  }
+}
+
 @media (max-height: 650px) {
   .nav-menu {
     padding: 0;
@@ -224,6 +239,17 @@ ul.contact-list{
   .nav-menu a {
     padding: 0.5em 15px;
   }
+}
+
+#personal-info {
+  background: #149ddd;
+  color: white;
+  padding: 1rem;
+  display: none;
+}
+
+#personal-info h1 {
+  font-size: 3rem;
 }
 /*--------------------------------------------------------------
 # Hero Section
@@ -239,6 +265,10 @@ ul.contact-list{
   min-width: 300px;
   margin-left: 350px;
   transition: all 0.5s;
+}
+
+#hero img {
+  height:220px;
 }
 
 #hero.nav-active .hero-container {
@@ -307,6 +337,10 @@ ul.contact-list{
     bottom: 0;
     transition: all 0.5s;
     left:50px;
+  }
+
+  #personal-info {
+    display: block;
   }
 
 }
@@ -504,11 +538,11 @@ section {
 # Resume
 --------------------------------------------------------------*/
 .resume .resume-title {
-  font-size: 26px;
+  font-size: 28px;
   font-weight: 700;
   margin-top: 20px;
   margin-bottom: 20px;
-  color: #050d18;
+  color: #086e9e;
 }
 
 .resume .resume-item {
